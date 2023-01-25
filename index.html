@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <title>Formularios irenea</title>
+    <title>Formulario</title>
 </head>
 <body>
-    <form action="datos.php" method="post">
-        Ingrese su nombre:
-        <input type="text" name="nombre" size="20">
+    <h1>Formulario mega fantastico</h1>
+    <p>Aquí el formulario en cuestión</p>
+    <form action="procesar-datos.php" method="post">
+        Artista que más has escuchado:
         <br>
-        <input type="submit" value="enviar">
-      </form>
+        <input type="text" name="campo_de_texto">
+        <br>
+        Géneros más escuchado:
+        <br>
+        <input type="checkbox" name="POP" size="40">POP<br>
+        <input type="checkbox" name="RAP" size="40">RAP<br>
+        <input type="checkbox" name="REGGAETON" size="40">REGGAETON<br>
+        Mejor disco del año:
+        <br>
+        <select name="lista_de_seleccion">
+          <option value="opcion1">Un Verano sin tí</option>
+          <option value="opcion2">Motomami</option>
+          <option value="opcion3">Saturno</option>
+        </select>
+        <br>
+        Sugerencias:
+        <br>
+        <textarea name="area_de_texto" rows="3" cols="50">En este control del formulario se pueden escribir varias líneas de texto.</textarea><br>
+        Nombre:
+        <br>
+        <input type="text" name="nombre"><br>
+        Gmail:
+        <br>
+        <input type="email" name="Gmail"><br>
+        <br>
+        <button type="reset">Borrar todo</button>
+        <button type="submit">Enviar</button>
+    </form>
 </body>

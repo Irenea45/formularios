@@ -4,15 +4,34 @@
     <title>Formulario</title>
 </head>
 <body>
-    <h1>Formulario mega fantastico</h1>
+    <h1>Formulario vaccaciones de verano</h1>
     <p>Aquí el formulario en cuestión</p>
     <form action="procesar-datos.php" method="post">
-        Tareas:
+
+        Asunto:
         <br>
         <input type="text" name="campo_de_texto">
         <br>
-        Centro :
+        <fieldset>
+        <legend>Datos personales</legend>
+        Nombre:
         <br>
+        <input type="text" name="nombre">
+        <br>
+        Apellidos
+        <br>
+        <input type="text" name="Apellidos">
+        <br>
+        Tarjeta identificativa
+        <br>
+        <input type="text" name="número id">
+        <input type="file" name="identificación">
+        
+        <br>
+
+        Puesto de trabajo:
+        <br>
+        <input type="checkbox" name="Dirección" size="40">Dirección<br>
         <input type="checkbox" name="Administración" size="40">Administración<br>
         <input type="checkbox" name="Almacén" size="40">Almacén<br>
         <input type="checkbox" name="Mecanica" size="40">Mecanica<br>
@@ -29,20 +48,40 @@
           <option value="opcion3">2022</option>
         </select>
         <br>
-        Quejaasssss:
+        </fieldset>
+        <p>Solicitud de vaccaciones, seleccione las fechas</p>
+        Días disponibles 
         <br>
-        <textarea name="area_de_texto" rows="3" cols="50">En este control del 
-        formulario se pueden escribir varias líneas de texto.</textarea><br>
-        Nombre:
+        <input type="number" name="Disponibles" value="10" min="10" max="30">
         <br>
-        <input type="text" name="nombre"><br>
+        Desde
+        <br>
+        <input type="date" name="comienzo" value="2023-06-15" min="2023-06-01" max="2023-09-01">
+        <br>
+        Hasta
+        <br>
+        <input type="date" name="final" value="2023-07-05" min="2023-06-01" max="2023-09-01">
+        <br>
+
+        Solicitud escrita:
+        <br>
+        <textarea name="area_de_texto" rows="3" cols="50">Solicito mis vaccaciones de verano desde x al x
+            (revisar)
+        </textarea><br>
         Gmail:
         <br>
-        <input type="email" name="Gmail"><br>
+        <input type="email" name="Gmail">
         <br>
-        <button type="reset">Borrar todo<img src="img/papelera.png" 
-            alt="borrar" width="10%" height="10%"></button>
-        <button type="submit">Enviar<img src="img/papelera.png" 
-            alt="borrar" width="10%" height="10%"></button>
+        Contraseña:
+        <br>
+        <input type="password" name="Contraseña">
+        <br>
+
+        <div id="enviar">
+        <button type="reset">Borrar todo 
+            <div><img src="img/papelera.png" alt="borrar" width="30%" height="30%"></div></button>
+        <button type="submit">Enviar
+            <div><img src="img/enviar.png" alt="borrar" width="30%" height="30%"></div></button>
+        </div>
     </form>
 </body>

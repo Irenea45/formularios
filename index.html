@@ -31,10 +31,10 @@
 
         Puesto de trabajo:
         <br>
-        <input type="checkbox" name="Dirección" size="40">Dirección<br>
-        <input type="checkbox" name="Administración" size="40">Administración<br>
-        <input type="checkbox" name="Almacén" size="40">Almacén<br>
-        <input type="checkbox" name="Mecanica" size="40">Mecanica<br>
+        <input type="radio" name="trabajo" value="1" size="40">Dirección<br>
+        <input type="radio" name="trabajo" value="2" size="40">Administración<br>
+        <input type="radio" name="trabajo" value="3" size="40">Almacén<br>
+        <input type="radio" name="trabajo" value="4" size="40">Mecanica<br>
         Año que empezaste a trabajar en el sector:
         <br>
         <select name="lista_de_seleccion">
@@ -50,13 +50,14 @@
         <br>
         </fieldset>
         <p>Solicitud de vaccaciones, seleccione las fechas</p>
-        Días disponibles 
+        Días de los que dispone:
         <br>
         <input type="number" name="Disponibles" value="10" min="10" max="30">
         <br>
+
         Desde
         <br>
-        <input type="date" name="comienzo" value="2023-06-15" min="2023-06-01" max="2023-09-01">
+        <input type="date" name="comienzo" value="2023-06-15" min="2023-06-01" max="2023-09-01" multiple>
         <br>
         Hasta
         <br>
@@ -68,6 +69,13 @@
         <textarea name="area_de_texto" rows="3" cols="50">Solicito mis vaccaciones de verano desde x al x
             (revisar)
         </textarea><br>
+         En caso de no tener disponibles la opción seleccionada anteriormente, marca otro posible mes:
+        <br>
+        <input type="checkbox" name="Mayo" disabled>Mayo<br>
+        <input type="checkbox" name="Junio">Junio<br>
+        <input type="checkbox" name="Julio"> Julio<br>
+        <input type="checkbox" name="Agosto"> Agosto<br>
+        <input type="checkbox" name="Septiembre"> Septiembre<br>
         Gmail:
         <br>
         <input type="email" name="Gmail">

@@ -22,6 +22,10 @@
         <br>
         <input type="text" name="Apellidos">
         <br>
+        Teléfono
+        <br>
+        <input type="text" value="991-" name="telefono">
+        <br>
         DNI/NIE
         <br>
         <input type="text" name="DNI">
@@ -31,6 +35,13 @@
         <input type="date" name="comienzo" value="2000-06-01" min="1990-01-01" max="2004-12-31">
         <br>
         </fieldset>
+
+        Puesto de trabajo que solicita:
+        <br>
+        <input type="radio" name="trabajo" value="1" size="40">Dirección<br>
+        <input type="radio" name="trabajo" value="2" size="40">Administración<br>
+        <input type="radio" name="trabajo" value="3" size="40">Almacén<br>
+        <input type="radio" name="trabajo" value="4" size="40">Mecanica<br>
         Tiempo de contratación 
         <br>
         <select name="lista_de_seleccion" multiple>
@@ -44,37 +55,23 @@
           <option value="Practicas">Prácticas</option>
         </select>
         <br>
-
-        Puesto de trabajo que solicita:
-        <br>
-        <input type="radio" name="trabajo" value="1" size="40">Dirección<br>
-        <input type="radio" name="trabajo" value="2" size="40">Administración<br>
-        <input type="radio" name="trabajo" value="3" size="40">Almacén<br>
-        <input type="radio" name="trabajo" value="4" size="40">Mecanica<br>
         ¿Experiencia en el sector?
         <br>
         <select name="Experiencia">
             <option value="option si">Sí</option>
             <option value="option no">No</option>
-
+            <option value="practicas">Solo prácticas</option>
         <br>
         Días de trabajo presencial al mes:
         <br>
         <input type="number" name="Disponibles" value="10" min="10" max="30">
         <br>
-
-
-        Hasta
-        <br>
-        <input type="date" name="final" value="2023-07-05" min="2023-06-01" max="2023-09-01">
-        <br>
-
         Solicitud escrita:
         <br>
         <textarea name="area_de_texto" rows="3" cols="50">Solicito mis vaccaciones de verano desde x al x
             (revisar)
         </textarea><br>
-         En caso de no tener disponibles la opción seleccionada anteriormente, marca otro posible mes:
+        Marca mes preferente para coger vacaciones de verano:
         <br>
         <input type="checkbox" name="Mayo" disabled>Mayo<br>
         <input type="checkbox" name="Junio">Junio<br>

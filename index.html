@@ -4,7 +4,7 @@
     <title>Formulario</title>
 </head>
 <body>
-    <h1>Formulario vaccaciones de verano</h1>
+    <h1>Entrevista trabajo </h1>
     <p>Aquí el formulario en cuestión</p>
     <form action="procesar-datos.php" method="post">
 
@@ -22,43 +22,48 @@
         <br>
         <input type="text" name="Apellidos">
         <br>
-        Tarjeta identificativa
+        DNI/NIE
         <br>
-        <input type="text" name="número id">
+        <input type="text" name="DNI">
         <input type="file" name="identificación">
-        
+        Fecha de Nacimiento
+        <br>
+        <input type="date" name="comienzo" value="2000-06-01" min="1990-01-01" max="2004-12-31">
+        <br>
+        </fieldset>
+        Tiempo de contratación 
+        <br>
+        <select name="lista_de_seleccion" multiple>
+          <option value="3meses">3 meses</option>
+          <option value="6meses">6 meses</option>
+          <option value="1año">1 año</option>
+          <option value="1 año y medio">1 año y medio</option>
+          <option value="2años">2 años</option>
+          <option value="2 años y medio">2 años y medio</option>
+          <option value="3 años">3 años</option>
+          <option value="Practicas">Prácticas</option>
+        </select>
         <br>
 
-        Puesto de trabajo:
+        Puesto de trabajo que solicita:
         <br>
         <input type="radio" name="trabajo" value="1" size="40">Dirección<br>
         <input type="radio" name="trabajo" value="2" size="40">Administración<br>
         <input type="radio" name="trabajo" value="3" size="40">Almacén<br>
         <input type="radio" name="trabajo" value="4" size="40">Mecanica<br>
-        Año que empezaste a trabajar en el sector:
+        ¿Experiencia en el sector?
         <br>
-        <select name="lista_de_seleccion">
-          <option value="opcion1">2015</option>
-          <option value="opcion2">2016</option>
-          <option value="opcion3">2017</option>
-          <option value="opcion3">2018</option>
-          <option value="opcion3">2019</option>
-          <option value="opcion3">2020</option>
-          <option value="opcion3">2021</option>
-          <option value="opcion3">2022</option>
-        </select>
+        <select name="Experiencia">
+            <option value="option si">Sí</option>
+            <option value="option no">No</option>
+
         <br>
-        </fieldset>
-        <p>Solicitud de vaccaciones, seleccione las fechas</p>
-        Días de los que dispone:
+        Días de trabajo presencial al mes:
         <br>
         <input type="number" name="Disponibles" value="10" min="10" max="30">
         <br>
 
-        Desde
-        <br>
-        <input type="date" name="comienzo" value="2023-06-15" min="2023-06-01" max="2023-09-01" multiple>
-        <br>
+
         Hasta
         <br>
         <input type="date" name="final" value="2023-07-05" min="2023-06-01" max="2023-09-01">

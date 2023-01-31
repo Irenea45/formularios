@@ -3,8 +3,6 @@ body {
     background-color: blanchedalmond;
 }
 #cabecera {
-    background-color: rgb(0, 174, 255);
-}
-#enviar {
-    color: powderblue;
+    background-color: burlywood;
+    text-align: center;
 }

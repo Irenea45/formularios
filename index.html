@@ -4,10 +4,11 @@
     <title>Formulario</title>
 </head>
 <body>
-    <h1>Entrevista trabajo </h1>
-    <p>Aquí el formulario en cuestión</p>
+    <div id="cabecera">
+    <h1>Formulario Álamo S.A.</h1>
+    </div>
+    <p>Rellena este formulario para solicitar un puesto de trabajo en nuestra empresa.</p>
     <form>
-
         Asunto:
         <br>
         <input type="text" name="campo_de_texto">
@@ -36,7 +37,8 @@
         <input type="date" name="comienzo" value="2000-06-01" min="1990-01-01" max="2004-12-31">
         <br>
         </fieldset>
-
+        <fieldset>
+        <legend>Solicitud a puesto de trabajo</legend>
         Puesto de trabajo que solicita:
         <br>
         <input type="radio" name="trabajo" value="1" size="40">Dirección<br>
@@ -70,8 +72,7 @@
         <br>
         ¿Hablas algún otro idioma? Indica cuales y que nivel tienes titulado:
         <br>
-        <textarea name="area_de_texto" rows="3" cols="50">Solicito mis vaccaciones de verano desde x al x
-            (revisar)
+        <textarea name="area_de_texto" rows="2" cols="50">Escribe aquí tu nivel de cada idioma que hables.
         </textarea><br>
         Marca mes preferente para coger vacaciones de verano:
         <br>
@@ -80,16 +81,17 @@
         <input type="checkbox" name="Julio"> Julio<br>
         <input type="checkbox" name="Agosto"> Agosto<br>
         <input type="checkbox" name="Septiembre"> Septiembre<br>
+        </fieldset>
         Gmail:
         <br>
         <input type="email" name="Gmail">
         <br>
-        Contraseña:
+        Contraseña para confirmar envio:
         <br>
         <input type="password" name="Contraseña">
         <br>
-
         <div id="enviar">
+        
         <button type="reset">Borrar todo 
             <div><img src="img/papelera.png" alt="borrar" width="30%" height="30%"></div></button>
         <button type="submit">Enviar

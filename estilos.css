@@ -1,0 +1,10 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: blanchedalmond;
+}
+#cabecera {
+    background-color: rgb(0, 174, 255);
+}
+#enviar {
+    color: powderblue;
+}
